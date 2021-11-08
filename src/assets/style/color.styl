@@ -1,0 +1,52 @@
+/* 颜色定义 */
+@import './vendor';
+
+foo = {
+  main-1:$main-1,
+  main-2:$main-2,
+  main-3:$main-3,
+  main-4:$main-4,
+  main-5:$main-5,
+  white: $white,
+  gray-1:$gray-1,
+  gray-2:$gray-2,
+  gray-3:$gray-3,
+  gray-4:$gray-4,
+  gray-5:$gray-5,
+  gray-6:$gray-6,
+  main: $main,
+  main-red:$main-red
+};
+
+for key, $color in foo {
+  .text-{key} {
+    color: $color;
+  }
+
+  a.text-{key}:hover {
+    color: $color + 30%;
+  }
+
+  .bg-{key} {
+    background-color: $color;
+  }
+
+  .border-{key} {
+    border-color: $color;
+  }
+
+  for n in 0 1 2 3 4 5 6 7 8 9 {
+    .text-{key}-{n} {
+      // 透明度为n * 0.1
+      color: rgba($color, n * 0.1);
+    }
+
+    .bg-{key}-{n} {
+      background-color: rgba($color, n * 0.1);
+    }
+
+    .border-{key}-{n} {
+      border-color: rgba($color, n * 0.1);
+    }
+  }
+}

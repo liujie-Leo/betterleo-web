@@ -13,7 +13,7 @@
           <span>开发</span>
         </div>
         <div :class="[{'nav-btns':true},{'fs-18':true},{'active':page=='digit'}]" @click="goToPage('digit')">
-          <span>数码</span>
+          <span>数码s</span>
         </div>
         <div v-if="false" :class="[{'nav-btns':true},{'fs-18':true},{'active':page=='living'}]" @click="goToPage('living')">
           <span>生活</span>

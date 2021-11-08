@@ -29,6 +29,9 @@ export default {
     getDarkModel () {
       const darkModel = getLocalStorage('darkModel') === 'true'
       this.$store.commit('SET_DARKMODEL', darkModel)
+    },
+    test () {
+      console.log('123')
     }
   }
 }

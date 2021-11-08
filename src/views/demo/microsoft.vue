@@ -55,7 +55,7 @@ export default {
   methods: {
     onResize () {
       const bannerWidth = document.getElementsByClassName('el-carousel__container')[0].clientWidth
-      console.log(bannerWidth)
+      // console.log(bannerWidth)
       const bannerHeight = bannerWidth / (8 / 3)
       const bannerEl = document.getElementsByClassName('el-carousel__item')
       bannerEl[0].style.height = bannerHeight + 'px'

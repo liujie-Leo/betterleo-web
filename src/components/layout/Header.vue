@@ -7,7 +7,7 @@
       </div>
       <div v-if="showNav" class="nav-box">
         <div :class="[{'nav-btns':true},{'fs-18':true},{'active':page=='home'}]" @click="goToPage('home')">
-          <span>首aa页</span>
+          <span>首a页</span>
         </div>
         <div :class="[{'nav-btns':true},{'fs-18':true},{'active':page=='develop'}]" @click="goToPage('develop')">
           <span>开发</span>

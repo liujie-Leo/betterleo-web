@@ -43,7 +43,7 @@
   console.log(`白屏时间:  ${whiteScreenTime}`)
 
   // 内存
-  const memory = window.performance.memory
+  const memory = window.performance.memory || {}
   const usedJSHeapSize = memory.usedJSHeapSize // JS堆栈被使用的内存
   const totalJSHeapSize = memory.totalJSHeapSize // 当前堆栈内存总大小 如果使用的内存大于该值，说明有可能出现内存泄露
   const jsHeapSizeLimit = memory.jsHeapSizeLimit // 内存大小限制

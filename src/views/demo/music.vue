@@ -218,9 +218,11 @@ export default {
   flex-direction column
   align-items center
   padding 32px 0
-  background-color #fff
+  backdrop-filter: blur(12px)
+  background-color:rgba(255,255,255,.6)
   overflow-y auto
   box-shadow -10px 10px 10px rgba(0,0,0,.1)
+  border: 1px solid rgba(255,255,255,.5)
   // background-image: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%);
 }
 .music-list::-webkit-scrollbar{

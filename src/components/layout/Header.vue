@@ -165,6 +165,7 @@ export default {
 <style lang="stylus" scoped>
 @import '~@/assets/style/vendor.styl'
 .main
+  transition: .2s
   height 64px
   width  100%
   min-width 1122px
@@ -352,6 +353,7 @@ export default {
 // 暗黑模式
 .dark
   .main
+    transition: .2s
     background-color rgba(31,40,58,.8)
     backdrop-filter: blur(12px)
   .active

@@ -168,11 +168,12 @@ export default {
   height 64px
   width  100%
   min-width 1122px
-  background-color #fff
   box-shadow 0px 1px 8px rgba(0,0,0,0.2)
   border-radius 0 0 4px 4px
   display flex
   justify-content center
+  background-color:rgba(255,255,255,.7)
+  backdrop-filter: blur(12px)
 .fixed
   position: sticky
   top 0
@@ -351,7 +352,8 @@ export default {
 // 暗黑模式
 .dark
   .main
-    background-color $dark-light
+    background-color rgba(31,40,58,.8)
+    backdrop-filter: blur(12px)
   .active
     background-color $dark-light
     box-shadow 0px 1px 6px rgba(255,255,255,0.2)

@@ -40,5 +40,11 @@ new Vue({
   mounted () {
     document.dispatchEvent(new Event('render-event'))
   },
-  render: h => h(App)
+  render: h => h(App),
+  errorCaptured (err, vm, info) {
+    console.log('Error:error had been captured by errorCaptured hook:')
+    console.log(err)
+    console.log(vm)
+    console.log(info)
+  }
 }).$mount('#app')

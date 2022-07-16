@@ -31,7 +31,7 @@ export default {
       this.$store.commit('SET_DARKMODEL', darkModel)
     },
     test () {
-      // console.log('12s3')
+      console.log('12s3')
     }
   }
 }

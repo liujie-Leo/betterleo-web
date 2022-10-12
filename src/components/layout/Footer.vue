@@ -13,6 +13,7 @@
       </div>
       <div class="menu">
         <ul class="menu-list fs-14">
+          <a class="copy-code" target="_blank" href="https://beian.miit.gov.cn/">湘ICP备2021003368号-1</a>
           <li>Develop By Leo</li>
           <li>
             <img :class="[{'author-img':true},{'avatar-animation':isShowAvatarAnimation}]" src="https://www.betterleo.com/images/author.png" @click="showAnimation('avatar')">
@@ -102,7 +103,7 @@ export default {
   display flex
   justify-content flex-end
 .menu-list
-  width 300px
+  width 350px
   height 100%
   display flex
   align-items center
@@ -121,6 +122,12 @@ export default {
 }
 .reset-weixin
   font-size 28px
+
+.copy-code{
+  text-decoration:none;
+  margin-right:30px;
+  color:#A4B0BE;
+}
 
 .wx-animation{
   animation: jello-horizontal 0.9s both;
